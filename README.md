@@ -150,9 +150,11 @@ Goodbye!
 
 ## ScreenShots
 
-<img src="images/admin.jpg" alt="Screenshot" width="250"/>
+<div style="display: flex; gap: 10px;">
+  <img src="images/admin.jpg" alt="Admin Screenshot" width="350"/>
+  <img src="images/user.jpg" alt="User Screenshot" width="350"/>
+</div>
 
-<img src="images/user.jpg" alt="Screenshot" width="250"/>
 
 ---
 
