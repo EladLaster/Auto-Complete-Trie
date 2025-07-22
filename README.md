@@ -151,7 +151,7 @@ Goodbye!
 ## ScreenShots
 
 <div style="display: flex; gap: 10px;">
-  <img src="images/admin.jpg" alt="Admin Screenshot" width="400"/>
+  <img src="images/admin.jpg" alt="Admin Screenshot" width="350"/>
   <img src="images/user.jpg" alt="User Screenshot" width="450"/>
 </div>
 
