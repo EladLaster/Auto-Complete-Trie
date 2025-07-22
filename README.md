@@ -20,7 +20,9 @@ A **Trie** (pronounced "try") is a tree-like data structure that stores strings 
 - Perfect for prefix-based searches
 
 ---
-# picture here
+
+<img src="images/trie.jpg" alt="Screenshot" width="500"/>
+
 ---
 
 ## Why use a Trie?
@@ -143,12 +145,6 @@ Goodbye!
 
 - Frequent commits are encouraged to track progress  
 - Tests can be run with your testing framework (e.g., Jest) to verify functionality
-
----
-
-## License
-
-[MIT License](LICENSE) (or your preferred license)
 
 ---
 
