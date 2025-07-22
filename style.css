@@ -1,0 +1,150 @@
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 2rem;
+  /* שינינו מ flex column ל default, כי יש לנו container שהוא flex */
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+.search-area {
+  flex: 1;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+.search-container {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+}
+
+#searchBox {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+#searchBox:focus {
+  border-color: #005fcc;
+  box-shadow: 0 0 6px #005fccaa;
+}
+
+.suggestions {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-top: none;
+  max-height: 200px;
+  overflow-y: auto;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.suggestions li {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.suggestions li:hover,
+.suggestions li:focus {
+  background-color: #e6f0ff;
+  outline: none;
+}
+
+/* CLI UI styles */
+
+.cli-container {
+  width: 320px;
+  background-color: #f3f3f3;
+  padding: 20px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  /* מוסתר כברירת מחדל */
+}
+
+.cli-container.hidden {
+  display: none;
+}
+
+#cliInput {
+  width: 100%;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 14px;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+#cliRun {
+  margin-top: 10px;
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#cliOutput {
+  background-color: #111;
+  color: #0f0;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 8px;
+  font-family: monospace;
+  white-space: pre-wrap;
+  min-height: 100px;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+#cliStatus {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #555;
+  font-style: italic;
+}
+
+/* כפתור toggle */
+
+#toggleCLI {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1500;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  border: none;
+  background-color: #005fcc;
+  color: white;
+  box-shadow: 0 2px 6px rgba(0, 95, 204, 0.7);
+  transition: background-color 0.3s ease;
+}
+
+#toggleCLI:hover {
+  background-color: #0044a5;
+}
